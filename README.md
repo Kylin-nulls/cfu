@@ -15,6 +15,10 @@ streamlit run app.py
 path/to/venv/bin/streamlit run app.py
 ```
 
+## Streamlit Cloud 部署
+
+云端 Linux 环境使用 `opencv-python-headless`，不要换成 `opencv-python`。如果部署时报错停在 `import cv2`，通常是云环境缺少 OpenCV GUI 依赖；提交当前 `requirements.txt` 后，在 Streamlit Cloud 里重新部署或清缓存重建即可。
+
 ## 桌面启动器
 
 开发环境里也可以用桌面启动器方式运行：
